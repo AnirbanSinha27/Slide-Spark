@@ -327,7 +327,7 @@ const ChatPanel: React.FC = () => {
                 </div>
                 <div className="flex-1">
                   <div className="mb-1.5">
-                    <span className="text-sm font-medium text-[#2c2c2c]">Assistant</span>
+                    <span className="text-sm font-medium text-[#BB7C60]">Assistant</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#666666]">
                     <div className="flex gap-1">
