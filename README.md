@@ -1,36 +1,164 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Slide Spark - AI PowerPoint Generator
 
-## Getting Started
+> Transform your ideas into professional PowerPoint presentations using Google Gemini AI
 
-First, run the development server:
+An intelligent presentation generator powered by Google's Gemini AI.
+
+## ✨ Features
+
+- 🤖 **Google Gemini AI** - Intelligent content generation
+- 💬 **Conversational Interface** - Natural language input
+- 👀 **Real-time Preview** - Instant slide visualization
+- 📜 **History Sidebar** - Access past presentations
+- 🎨 **Beautiful UI** - Claude-inspired design
+- ⚡ **Quick Export** - One-click PPTX download
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **AI**: Google Gemini API
+- **PPT Generation**: PptxGenJS
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
+
+```bash
+git clone https://github.com/yourusername/slideforge.git
+cd slideforge
+npm install
+```
+
+### 2. Setup Environment Variables
+
+Create `.env.local` in the root directory:
+
+```env
+# Google Gemini API Key
+NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY=your_api_key_here
+
+# Optional Configuration
+NEXT_PUBLIC_GEMINI_MODEL=gemini-pro
+NEXT_PUBLIC_MAX_SLIDES=25
+```
+
+### 3. Get Your Gemini API Key
+
+1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy and paste it into `.env.local`
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Example Prompts
 
-## Learn More
+```
+"Create a 5-slide presentation about renewable energy"
 
-To learn more about Next.js, take a look at the following resources:
+"Make a business pitch deck for a SaaS startup with 8 slides"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+"Generate educational slides about the solar system for kids"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+"Build a marketing strategy presentation with 10 slides"
+```
 
-## Deploy on Vercel
+### Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Type your presentation requirements
+2. AI generates slides with headings, descriptions, and bullets
+3. Preview slides in the right panel
+4. Download as PPTX file
+5. Access history from the left sidebar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚙️ Configuration
+
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push code to GitHub
+2. Import project in [Vercel](https://vercel.com)
+3. Add environment variable:
+   - `NEXT_PUBLIC_GOOGLE_GEMINI_API_KEY`
+4. Deploy
+
+### Build Locally
+
+```bash
+npm run build
+npm run start
+```
+
+## 🔒 Security
+
+- Never commit `.env.local` to version control
+- Keep API keys secure
+- Implement rate limiting for production
+- Sanitize user inputs before API calls
+
+## 🐛 Troubleshooting
+
+**API Key Error**
+- Verify key in `.env.local` has no extra spaces
+- Check key is active in Google AI Studio
+
+**Slides Not Generating**
+- Check internet connection
+- Verify API quota hasn't been exceeded
+- Simplify your prompt
+
+**Preview Panel Not Showing**
+- Click toggle button in top-right corner
+- Check browser console for errors
+
+## 📦 Scripts
+
+```bash
+npm run dev          # Start development server
+npm run build        # Create production build
+npm run start        # Start production server
+npm run lint         # Run ESLint
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing`)
+3. Commit changes (`git commit -m 'Add feature'`)
+4. Push to branch (`git push origin feature/amazing`)
+5. Open Pull Request
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file
+
+## 🙏 Acknowledgments
+
+- Google Gemini AI
+- Claude.ai UI inspiration
+- Tailwind CSS
+- Lucide Icons
+
+## 📧 Contact
+
+- GitHub: [@AnirbanSinha27](https://github.com/AnirbanSinha27)
+- Email: anirbansinha27@gmail.com
+
+---
+
+**Made with ❤️ using Next.js and Google Gemini AI**
+
+⭐ Star this repo if you find it helpful!
